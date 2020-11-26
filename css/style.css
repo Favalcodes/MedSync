@@ -273,6 +273,7 @@ iframe{
     margin: 0 auto;
     margin-top: 30px;
     width: 70%;
+    caret-color: #14ffec;
 }
 .sub-btn{
     background: #14ffec;
@@ -292,6 +293,69 @@ iframe{
     padding: 20px 0;
     font-size: 24px;
 }
+
+/* Sign Up page */
+
+.head .page{
+    height: 100vh;
+}
+.dark{
+    background: #0f0f0f;
+    color: #fff;
+    line-height: 40px;
+}
+.dark .col-md-12{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.dark h2{
+    font-size: 48px;
+}
+.dark p{
+    font-size: 24px;
+}
+.dark span{
+    font-size: 18px;
+    color: #f4f4f4;
+    font-weight: 100;
+}
+.dark a{
+    color: #14ffec;
+    font-size: 20px;
+}
+.light{
+    background: #14ffec;
+    color: #002729;
+    padding: 0 80px;
+    font-size: 20px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.light .pat{
+    border: 2px solid #002729;
+    color: #002729;
+    background: transparent;
+    padding: 10px 65px;
+    border-radius: 22px;
+}
+.light .org{
+    border: 2px solid #002729;
+    color: #002729;
+    background: transparent;
+    padding: 10px 40px;
+    border-radius: 22px;
+}
+.light p{
+    font-size: 18px;
+}
+
 @media (max-width:780px){
     body{
         overflow-x: hidden;
@@ -566,7 +630,7 @@ iframe{
     .footer1 .form-control{
         margin: 0 auto;
         margin-top: 30px;
-        width: 70%;
+        width: 90%;
     }
     .sub-btn{
         background: #14ffec;
@@ -585,5 +649,19 @@ iframe{
         text-align: center;
         padding: 20px 0;
         font-size: 18px;
+    }
+    .light{
+        background: #14ffec;
+        color: #002729;
+        padding: 0 80px;
+        font-size: 20px;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        line-height: 30px;
     }
 }
