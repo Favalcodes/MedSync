@@ -9,6 +9,10 @@ body{
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
 .navbar{
     background: #0f0f0f;
     height: 80px;
@@ -528,18 +532,20 @@ iframe{
     }
     .header-svg14{
         position: absolute;
-        top: 1107%;
+        bottom: 10%;
         left: -15%;
+        display: none;
     }
     .header-svg15{
         position: absolute;
         top: 1073%;
         left: 0%;
         width: 100%;
+        display: none;
     }
     .footer1{
         padding: 150px 40px;
-        background: #323232;
+        background: #202020;
         text-align: center;
         color: #fff;
     }
