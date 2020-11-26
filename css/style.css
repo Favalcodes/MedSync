@@ -93,7 +93,7 @@ header h3{
 .header-svg5{
     position: absolute;
     top: 815px;
-    left: 0px;
+    left: 10px;
 }
 .header-svg6{
     position: absolute;
@@ -113,6 +113,9 @@ header h3{
     font-size: 18px;
     color: #fff;
     line-height: 30px;
+}
+iframe{
+    width: 500px;
 }
 .header-svg7{
     position: absolute;
@@ -284,4 +287,297 @@ header h3{
     text-align: center;
     padding: 20px 0;
     font-size: 24px;
+}
+@media (max-width:780px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        background: #0f0f0f;
+        height: 80px;
+        color: #14ffec;
+        padding: 0 20px;
+        font-weight: 700;
+    }
+    .s-btn{
+        background: #14ffec;
+        color: #002729;
+        border-radius: 22px;
+        padding: 10px 20px;
+        display: none;
+    }
+    header{
+        background-color: #202020;
+        height: auto;
+        width: 100%;
+    }
+    .header-svg{
+        position: absolute;
+        top: 15%;
+        left: 20%;
+    }
+    .header-svg2{
+        position: absolute;
+        top: 30%;
+        left: 23%;
+    }
+    .header-svg3{
+        position: absolute;
+        top: 277px;
+        right: 0px;
+        display: none;
+    }
+    .header-svg4{
+        position: absolute;
+        top: 557px;
+        right: 0px;
+        display: none;
+    }
+    .header-text{
+        padding: 0 40px;
+    }
+    header h3{
+        color: #14ffec;
+        font-weight: 700;
+        font-size: 32px;
+        /* z-index: 99; */
+    }
+    .header-text p{
+        color: #fff;
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .start{
+        padding: 10px 20px;
+        color: #14ffec;
+        background: transparent;
+        border: 2px solid #14ffec;
+        border-radius: 22px;
+        margin-top: 40px;
+    }
+    .header-text .text{
+        padding: 30px 0;
+        padding-top: 100px;
+    }
+    .header-text .svg{
+        padding: 30px 0;
+        z-index: 99;
+    }
+    .doc{
+        width: 100%;
+    }
+    .header-svg5{
+        position: absolute;
+        top: 160%;
+        left: 0px;
+    }
+    .header-svg6{
+        position: absolute;
+        top: 130%;
+        left: 0px;
+    }
+    .video{
+        background: #00332f;
+        text-align: center;
+        padding: 80px 40px;
+    }
+    .video h3{
+        font-size: 32px;
+        color: #14ffec;
+    }
+    .video p{
+        font-size: 18px;
+        color: #fff;
+        line-height: 30px;
+        padding-top: 40px;
+    }
+    iframe{
+        width: 100%;
+    }
+    .header-svg7{
+        position: absolute;
+        top: 500%;
+        right: 0px;
+    }
+    .header-svg8{
+        position: absolute;
+        top: 440%;
+        right: 0px;
+    }
+    .experience{
+        padding: 80px 40px;
+        text-align: center;
+        background: #003d38;
+        color: #fff;
+    }
+    .experience h3{
+        font-size: 32px;
+        color: #14ffec;
+        font-weight: 700;
+    }
+    .experience .row{
+        padding: 50px 0px;
+    }
+    .experience .columns{
+        background: #003d38;
+        border: 3px solid #14ffec;
+        border-radius: 22px;
+        padding: 30px;
+        height: 350px;
+        margin-top: 30px;
+    }
+    .columns p{
+        margin-top: 36px;
+    }
+    .more{
+        padding: 10px 20px;
+        color: #14ffec;
+        background: transparent;
+        border: 2px solid #14ffec;
+        border-radius: 22px;
+        margin-top: 20px;
+    }
+    .header-svg9{
+        position: absolute;
+        top: 610%;
+        left: 50%;
+    }
+    .header-svg10{
+        position: absolute;
+        top: 560%;
+        left: 0px;
+        width: 100%;
+    }
+    .data{
+        padding: 100px 40px;
+        background: #e8fcfc;
+        color: #002729;
+    }
+    .ray{
+        width: 100%;
+    }
+    .data h3{
+        font-weight: 700;
+        font-size: 32px;
+        color: #0d7377;
+        padding-top: 80px;
+    }
+    .data p{
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .mor{
+        padding: 10px 20px;
+        color: #0d7377;
+        background: transparent;
+        border: 2px solid #0d7377;
+        border-radius: 22px;
+        margin-top: 20px;
+    }
+    .header-svg11{
+        position: absolute;
+        top: 710%;
+        left: -25%;
+    }
+    .control{
+        padding: 100px 40px;
+        background: #f4f4f4;
+    }
+    .control .row{
+        flex-direction: column-reverse;
+    }
+    .pharm{
+        width: 100%;
+    }
+    .control h3{
+        font-weight: 700;
+        font-size: 32px;
+        color: #0d7377;
+        padding-top: 80px;
+    }
+    .control p{
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .header-svg12{
+        position: absolute;
+        top: 870%;
+        left: -24%;
+    }
+    .header-svg13{
+        position: absolute;
+        top: 1000%;
+        right: 0;
+    }
+    .fund{
+        padding: 100px 40px;
+        background: #e8fcfc;
+    }
+    .wallet{
+        width: 100%;
+    }
+    .fund h3{
+        font-weight: 700;
+        font-size: 32px;
+        color: #0d7377;
+        padding-top: 80px;
+    }
+    .fund p{
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .header-svg14{
+        position: absolute;
+        top: 1107%;
+        left: -15%;
+    }
+    .header-svg15{
+        position: absolute;
+        top: 1073%;
+        left: 0%;
+        width: 100%;
+    }
+    .footer1{
+        padding: 150px 40px;
+        background: #323232;
+        text-align: center;
+        color: #fff;
+    }
+    .footer1 h3{
+        font-weight: 700;
+        font-size: 32px;
+        color: #14ffec;
+    }
+    .footer1 p{
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .footer1 span{
+        font-size: 18px;
+        color: #f4f4f4;
+        font-weight: 300;
+    }
+    .footer1 .form-control{
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 70%;
+    }
+    .sub-btn{
+        background: #14ffec;
+        color: #002729;
+        border-radius: 22px;
+        padding: 10px 20px;
+        margin-top: 40px;
+    }
+    .sub-btn:hover{
+        color: #14ffec;
+        background: none;
+    }
+    .footer2{
+        background: #0f0f0f;
+        color: #f4f4f4;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 18px;
+    }
 }
