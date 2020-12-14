@@ -1,0 +1,211 @@
+// Api calls to the Blockchain
+
+
+//Api Testing 
+var config = {
+    "comment": "Node JS module configuration file",
+    "url": "http://localhost:26874",
+    "secretPhrase": "funny bamboo marble memory item stairs raise village salad year nation deputy ball achieve surround miss core load",
+    "recipientPublicKey": "8729276be599b7c0f92e0fcc46cf62f4f72e6c2c58fed9e3aea82e52b116c902",
+    "isTestNet": true,
+    "chain": "2",
+    "adminPassword": ""
+};
+
+// Importing the package
+ardor = require("ardor-blockchain");
+
+// Initializing the object with meta parameters
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    // Request data
+    var data = {
+        account : "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response
+        NRS.sendRequest("getAccountProperties", data, function (response) {
+        NRS.logConsole(JSON.stringify(response));
+    });
+});
+
+// Account ID
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        publicKey: "8729276be599b7c0f92e0fcc46cf62f4f72e6c2c58fed9e3aea82e52b116c902"
+    };
+    // Request query and response
+        NRS.sendRequest("getAccountId", data, function (response) {
+        NRS.logConsole("Account id is:" + JSON.stringify(response));
+    });
+});
+
+// Account Public Key
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        account : "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response 
+        NRS.sendRequest("getAccountPublicKey", data, function (response) {
+        NRS.logConsole("Account public key is:" + JSON.stringify(response));
+    });
+});
+
+// Account Ledger
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        account : "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response
+        NRS.sendRequest("getAccountLedger", data, function (response) {
+        NRS.logConsole("Account ledger transactions are:" + JSON.stringify(response));
+    });
+});
+
+// Account Asset Count 
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        account : "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response
+        NRS.sendRequest("getAccountAssetCount", data, function (response) {
+        NRS.logConsole("Account Assets are:" + JSON.stringify(response));
+    });
+});
+
+// Account Currency Count
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        account : "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response
+        NRS.sendRequest("getAccountCurrencyCount", data, function (response) {
+        NRS.logConsole("Currencies in wallet are:" + JSON.stringify(response));
+    });
+});
+
+// Unconfirmed Transactions
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        chain : "2",
+        account : "ARDOR-HWZW-5TT6-U68F-H26L8",
+        account : "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response
+        NRS.sendRequest("getUnconfirmedTransactions", data, function (response) {
+        NRS.logConsole("Unconfirmed Transactions:" + JSON.stringify(response));
+    });
+});
+
+// Account Info
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        chain : "2",
+        name : "Dev",
+        description : "Test SetAccountInfo",
+        secretPhrase : "funny bamboo marble memory item stairs raise village salad year nation deputy ball achieve surround miss core load",
+        publicKey : "8729276be599b7c0f92e0fcc46cf62f4f72e6c2c58fed9e3aea82e52b116c902"
+
+    };
+    // Request query and response
+        NRS.sendRequest("setAccountInfo", data, function (response) {
+        NRS.logConsole("Account information:" + JSON.stringify(response));
+    });
+});
+
+// Account Property - Setter
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        chain : "2",
+        recipient : "1",
+        property : "Dev Testaccount",
+        value : "propValue",
+        secretPhrase : "funny bamboo marble memory item stairs raise village salad year nation deputy ball achieve surround miss core load",
+        feeNQT : "10000000"
+    };
+    // Request query and response
+        NRS.sendRequest("setAccountProperty", data, function (response) {
+        NRS.logConsole(JSON.stringify(response));
+    });
+});
+
+// Account Properties - Getter 
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        recipient: "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response
+        NRS.sendRequest("getAccountProperties", data, function (response) {
+        NRS.logConsole(JSON.stringify(response));
+    });
+});
+
+// Get Balance 
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        chain :  "2",
+        account : "ARDOR-52UA-FFQC-PRNW-3R4HS"
+    };
+    // Request query and response
+        NRS.sendRequest("getBalance", data, function (response) {
+        NRS.logConsole("Balance is:" + JSON.stringify(response));
+    });
+});
+
+// Send Money 
+var ardor = require('ardor-blockchain');
+
+ardor.init(config);
+
+ardor.load(function(NRS) {
+    var data = {
+        chain : "2",//Ignis
+        recipient : "ARDOR-HWZW-5TT6-U68F-H26L8",
+        amountNQT : "1000000000",// 1 Ignis = 10^8 NQT, here 15 Ignis
+        publicKey : "8729276be599b7c0f92e0fcc46cf62f4f72e6c2c58fed9e3aea82e52b116c902"//publicKey of the sender
+    };
+    // Request query and response
+        NRS.sendRequest("sendMoney", data, function (response) {
+        NRS.logConsole(JSON.stringify(response));
+    });
+});
